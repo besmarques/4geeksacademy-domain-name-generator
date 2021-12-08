@@ -1,12 +1,14 @@
-function generateDomain(){
-    let pronoum = ["the","our","mine"];
-    let adj = ["great","big","fantastic","fabulous","marvelous"];
-    let noun = ["dog", "cat","bird","car","boat"];
-    let tldr = [".us", ".pt",".com",".org",".eu",".io"];
+let pronoum = ["the","our","mine"];
+let adj = ["great","big","fantastic","fabulous","marvelous"];
+let noun = ["dog", "cat","bird","car","boat"];
+let tldr = [".us", ".pt",".com",".org",".eu",".io"];
 
-    let domain = " ";
-
-    return domain = "The best domain you can use is " + pronoum[Math.floor(Math.random(pronoum.length))] + adj[Math.floor(Math.random(adj.length))] + noun[Math.floor(Math.random(noun.length))] + tldr[Math.floor(Math.random(tldr.length))];
-}
-
-console.log(generateDomain());
+for (let i = 0; i < pronoum.length; i++){
+  	for (let z = 0; z < adj.length; z++){
+      	for (let x = 0; x < noun.length; x++){
+        	for (let c = 0; c < tldr.length; c++){
+   			    console.log(pronoum[i] + adj[z] + noun[x] + tldr[c]); 			
+            }
+        }
+    }
+}   
